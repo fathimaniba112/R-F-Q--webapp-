@@ -41,7 +41,7 @@ export default function OpportunityTable() {
               <thead>
                 <tr className="bg-[#F5F2EA] border-b border-gray-200">
                   <th className="px-8 py-5 text-xs font-bold uppercase tracking-wider text-gray-500 w-32">RFX #</th>
-                  <th className="px-8 py-5 text-xs font-bold uppercase tracking-wider text-gray-500">Opportunity Details</th>
+                  <th className="px-8 py-5 text-xs font-bold uppercase tracking-wider text-gray-500">Description </th>
                   <th className="px-8 py-5 text-xs font-bold uppercase tracking-wider text-gray-500 text-center">Status</th>
                   <th className="px-8 py-5 text-xs font-bold uppercase tracking-wider text-gray-500">Published</th>
                   <th className="px-8 py-5 text-xs font-bold uppercase tracking-wider text-gray-500">Closing Date</th>

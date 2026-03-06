@@ -1,7 +1,6 @@
  import "./index.css";
  import Navbar from "./pages/navbar";
- import Banner from "./pages/banner";
-import OpportunityFilter from "./pages/filter";
+ import OpportunityFilter from "./pages/filter";
 import OpportunityTable from "./pages/table";
 import Footer from "./pages/footer";
 import ProcurementHeader from "./pages/cards";
@@ -12,7 +11,7 @@ function App() {
  
    
       <Navbar />
-          <Banner/>
+          
        <ProcurementHeader/>
              <OpportunityFilter />
              <OpportunityTable/>

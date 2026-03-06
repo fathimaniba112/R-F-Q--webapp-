@@ -17,7 +17,7 @@ const Footer = () => {
                 P
               </div>
               <span className="text-white text-2xl font-semibold tracking-tight">
-                Procur<span className="text-[#3D5A45]">al</span>
+                Procu<span className="text-[#3D5A45]">bid</span>
               </span>
             </div>
             <p className="text-sm leading-relaxed max-w-xs">
@@ -50,7 +50,7 @@ const Footer = () => {
             <ul className="space-y-4 text-sm">
               <li className="flex items-center gap-3">
                 
-                <a href="mailto:info@procural.com" className="hover:text-white transition-colors">Terms & Conditions
+                <a href="mailto:info@procubid.com" className="hover:text-white transition-colors">Terms & Conditions
 </a>
               </li>
               <li className="flex items-center gap-3">
@@ -64,7 +64,7 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
-          <p>© {currentYear} Procural. All rights reserved.</p>
+          <p>© {currentYear} Procubid. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-white transition-colors">Terms</a>
             <a href="#" className="hover:text-white transition-colors">Privacy</a>

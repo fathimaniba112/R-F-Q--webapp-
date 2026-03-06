@@ -10,10 +10,10 @@ export default function Navbar() {
   };
 
   const navLinks = [
-    { name: 'Company', type: 'dropdown', items: ['About Us', 'Our Team', 'Culture'] },
-    { name: 'Terms', type: 'dropdown', items: ['Privacy Policy', 'Terms of Service', 'Cookie Policy'] },
-    { name: 'Careers', type: 'link', href: '#' },
-    { name: 'Contact', type: 'link', href: '#' },
+    { name: 'Explore Features', type: 'dropdown', items: ['About Us', 'Our Team', 'Culture'] },
+    { name: 'About Us', type: 'dropdown', items: ['Privacy Policy', 'Terms of Service', 'Cookie Policy'] },
+    { name: 'Pricing', type: 'link', href: '#' },
+    { name: 'Set Country', type: 'link', href: '#' },
   ];
 
   return (
@@ -25,9 +25,9 @@ export default function Navbar() {
     <div className="flex-shrink-0 flex items-center ">
       <a href="/" className="flex items-center space-x-1">
         {/* stylized P in dark green, rest in lighter green */}
-        <span className="text-4xl font-black text-[#264E36]">P</span>
+        <span className="text-4xl font-black text-[#264E36]">PROCU</span>
         <span className="text-4xl font-black text-[#7A9C83] tracking-wide">
-          ROCUBID
+          BID
         </span>
       </a>
     </div>
