@@ -1,5 +1,6 @@
  import { useState } from 'react';
 import { ChevronDownIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import logo from '../assets/logo.png';   // import the image
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,9 +24,14 @@ export default function Navbar() {
           
         {/* Logo rendered as text with two-tone coloring */}
     <div className="flex-shrink-0 flex items-center ">
+        <img 
+          src={logo}
+          alt="Procubid Logo" 
+          className="h-10 w-auto" 
+        />
       <a href="/" className="flex items-center space-x-1">
         {/* stylized P in dark green, rest in lighter green */}
-        <span className="text-4xl font-black text-[#264E36]">PROCU</span>
+        <span className="text-4xl font-black text-[#264E36]">ROCU</span>
         <span className="text-4xl font-black text-[#7A9C83] tracking-wide">
           BID
         </span>
