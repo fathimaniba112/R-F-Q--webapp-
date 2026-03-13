@@ -31,7 +31,7 @@ export default function Navbar() {
         />
       <a href="/" className="flex items-center space-x-1">
         {/* stylized P in dark green, rest in lighter green */}
-        <span className="text-4xl font-black text-[#264E36]">ROCU</span>
+        <span className="text-4xl font-black text-[#264E36]">PROCU</span>
         <span className="text-4xl font-black text-[#7A9C83] tracking-wide">
           BID
         </span>

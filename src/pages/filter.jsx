@@ -93,7 +93,7 @@ const OpportunityFilter = () => {
       {/* 2. Increased Width: Changed max-w-7xl to max-w-[98%] or max-w-full */}
       <div className="max-w-[1600px] mx-auto bg-[#F9F7F2] rounded-2xl border border-gray-200 shadow-lg overflow-hidden">
         
-        <div className="p-6 md:p-10"> {/* Increased internal padding for the wider look */}
+        <div className="p-4 md:p-6"> {/* Increased internal padding for the wider look */}
           
           <div className="flex flex-col md:flex-row gap-4 mb-8">
             <div className="relative flex-grow">
