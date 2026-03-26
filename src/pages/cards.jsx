@@ -47,9 +47,10 @@ export default function ProcurementHeader() {
   return (
     <div className="w-full">
       {/* Green Header Section */}
-      <div className="w-full bg-[#43624A] pt-8 pb-12 px-4 md:px-8">
-        {/* <div className="max-w-[1000px] mx-auto"> */}
-<div className="max-w-[1000px] mx-auto">          <h1 className="text-2xl font-bold text-white mb-3">B2B E-Procurement & Tender Portal</h1>
+<div className="w-full bg-[#43624A] pt-8 pb-12 pl-0 pr-4 md:pr-8">
+          {/* <div className="max-w-[1000px] mx-auto"> */}
+<div className="max-w-[1000px] ml-10">
+     <h1 className="text-2xl font-bold text-white mb-3">B2B E-Procurement & Tender Portal</h1>
           <p className="text-[#E8F0E9]/80 text-lg max-w-2xl leading-relaxed">
 Browse and bid on available opportunities. Find the right RFXs for your business           </p>
         </div>

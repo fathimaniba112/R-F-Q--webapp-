@@ -1,7 +1,7 @@
  import { useState } from 'react';
 import { ChevronDownIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import logo from '../assets/logo.png';   // import the image
-
+import { Link } from "react-router-dom";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -13,30 +13,28 @@ export default function Navbar() {
   const navLinks = [
     { name: 'Explore Features', type: 'dropdown', items: ['About Us', 'Our Team', 'Culture'] },
     { name: 'About Us', type: 'dropdown', items: ['Privacy Policy', 'Terms of Service', 'Cookie Policy'] },
-    { name: 'Pricing', type: 'link', href: '#' },
+    { name: 'Pricing', type: 'link', href: '/pricing'},
     { name: 'Set Country', type: 'link', href: '#' },
   ];
 
   return (
     <nav className="bg-white border-b border-gray-100 sticky top-0 z-50 shadow-sm">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16 items-center">
-          
-        {/* Logo rendered as text with two-tone coloring */}
-    <div className="flex-shrink-0 flex items-center ">
-        <img 
-          src={logo}
-          alt="Procubid Logo" 
-          className="h-10 w-auto" 
-        />
-      <a href="/" className="flex items-center space-x-1">
-        {/* stylized P in dark green, rest in lighter green */}
-        <span className="text-4xl font-black text-[#264E36]">PROCU</span>
-        <span className="text-4xl font-black text-[#7A9C83] tracking-wide">
-          BID
-        </span>
-      </a>
-    </div>
+      <div className="max-w-1xl mx-auto px-4 sm:px-6 lg:px-8">
+<div className="flex justify-between items-center py-1">
+  <div className="flex items-center">
+    <img 
+      src={logo}
+      alt="Procubid Logo" 
+      className="h-10 w-auto mr-[5px] block"
+    />
+
+  <a href="/" className="flex items-center space-x-1 m-0 p-0">
+    <span className="text-4xl font-black text-[#264E36]">PROCU</span>
+    <span className="text-4xl font-black text-[#7A9C83] tracking-wide">
+      BID
+    </span>
+  </a>
+</div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8 items-center">
@@ -51,10 +49,12 @@ export default function Navbar() {
                     <ChevronDownIcon className={`ml-1 w-4 h-4 transition-transform ${activeDropdown === link.name ? 'rotate-180' : ''}`} />
                   </button>
                 ) : (
-                  <a href={link.href} className="text-gray-600 hover:text-[#43624A] font-medium transition-colors">
-                    {link.name}
-                  </a>
-                )}
+        <Link
+  to={link.href}
+  className="text-gray-600 hover:text-[#43624A] font-medium transition-colors"
+>
+  {link.name}
+</Link>         )}
 
                 {/* Desktop Dropdown Menu */}
                 {link.type === 'dropdown' && activeDropdown === link.name && (
